@@ -20,7 +20,7 @@ def get_current_eastern_time():
 
 
 if st.button("Go to Main Page"):
-    webbrowser.open_new_tab("https://flowerpowerweb-y5xthaukjkfnapp8zymvysg.streamlit.app")
+    webbrowser.open("https://flowerpowerweb-y5xthaukjkfnapp8zymvysg.streamlit.app")
     
 #two modes 
 if "theme" not in st.session_state:
