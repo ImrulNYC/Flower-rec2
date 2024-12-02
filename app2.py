@@ -18,6 +18,10 @@ def get_current_eastern_time():
     eastern = pytz.timezone("US/Eastern")
     return datetime.now(eastern).strftime("%Y-%m-%d %H:%M:%S")
 
+
+if st.button("Go to Main Page"):
+    webbrowser.open_new_tab("https://flowerpowerweb-y5xthaukjkfnapp8zymvysg.streamlit.app")
+    
 #two modes 
 if "theme" not in st.session_state:
     st.session_state.theme = "light"
@@ -34,8 +38,7 @@ else:
     text_color = '#ffffff'
     background_color = '#000000cc'
 
-if st.button("Go to Main Page"):
-    webbrowser.open_new_tab("https://flowerpowerweb-y5xthaukjkfnapp8zymvysg.streamlit.app")
+
 
 #themes
 background_gradient = (
